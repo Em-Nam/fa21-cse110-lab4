@@ -16,29 +16,47 @@
 ## Data Types
 12. 
 A. access name property: student.name
+
 B. access Grad Year property: student["Grad Year"]
+
 C. call function for greeting property: student.greeting();
+
 D. access name of Favorite Teacher property: student['Favorite Teacher'].name
+
 E. access first index of courseLoad property: student.courseLoad[0]
 
 ## Basic Operators and Type Conversion
 13. Arithmetic
 A. ‘3’ + 2 = `'32'` because integers map to their exact string representation so 2 maps to '2'.
+
 B. ‘3’ - 2 = `1` because the subtraction is a math operator so there is a numeric conversion for the string `'3'` before subtracting 2. And 3-2 = 1.
+
 C. 3 + null = `3` because null becomes zero for numeric conversions so 3+0=3.
+
 D. ‘3’ + null = `'3null'` because since '3' is a string, null is converted to the string 'null' before being concatonated.
+
 E. true + 3 = `4` because true maps to the value 1. and 1+3=4.
+
 F. false + null = `0` because false is mapped to the value zero. And for numberic operations, null also becomes zero. So 0+0=0.
+
 G. '3' + undefined = `'3undefined'` since '3' is a string, undefined gets converted to the string 'undefined' and is then concatonated.
+
 H. '3' - undefined = `NaN` because is undergoes a numeric conversion. This means that undefined because NaN and the operation doesn't output a number.
 
 14. Comparison
 A. ‘2’ > 1 returns `true` because the string '2' becomes the number and 2 is greater than 1
+
 B. ‘2’ < ‘12’ returns `false` because the string '1' (from the '12') comes before the string '2'
+
 C. 2 == ‘2’ returns `true` because the string '2' gets converted to a number
+
 D. 2 === ‘2’ returns `false` because it is a strict comparison that checks without type conversion and the types are not the same
+
 E. true == 2 returns `false` because true gets converted to the number 1, which is not equal to 2
+
 F. true === Boolean(2) returns `true` because since 2 is nonzero, it is considered true and since it uses a Boolean() type conversion the types also match in the strict comparison
+
+
 
 15. Difference between `==` and `===` operators: The `==` is a normal equality comparison that automatically does type conversions when comparing. The `===` is a strict comparison that does not do type conversions so if the two operands are not the same type on top of being equal, it will evaluate to false.
 
